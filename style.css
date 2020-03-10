@@ -1,0 +1,27 @@
+*{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#floatingDiv{
+    font-size: 25px;
+    position:absolute;
+    top:75px;
+    right:200px;
+    width: 200px;
+    height: 30px;
+}
+#floatingDivDate{
+    position: relative;
+    background-color: red;
+    animation-name: leftToRight;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes leftToRight {
+    0%   {background-color:red; left:0px; top:0px;}
+    20%  {background-color:yellow; left:150px; top:0px;}
+    40%  {background-color:blue; left:0px; top:0px;}
+    60%  {background-color:palegreen; left:150px; top:0px;}
+    80% {background-color:purple; left:0px; top:0px;}
+  }
